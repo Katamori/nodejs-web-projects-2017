@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="/files/terminus-nation/date-calc/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src='/files/terminus-nation/convertdate.js'></script>
+	</head>
+
+	<body>
+
+		<!-- A SIMPLE DATE CALCULATOR -->
+		<div class="heading">
+			<div class="datecalc">
+				<h1> TN Date Calculator </h1>
+				<h2>What a given year in a calendar system corresponds to, in another one?</h2>
+
+				<input type="number" id="in_d" style="width:100px;"> in
+
+				<select id="in_c"></select> to
+				<select id="ou_c"></select>
+
+				<button id="action" onClick="convertDate_onClick()">Convert</button>
+
+				<p id="result"></p>
+			</div>
+
+			<div class = "other">
+				This is a div used for div positioning purposes. It is now left here as a test subject.
+			</div>
+
+		</div>
+
+	</body>
+	<script src='/files/terminus-nation/date-calc/main_js.js'></script>
+</html>

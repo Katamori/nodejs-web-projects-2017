@@ -1,0 +1,61 @@
+.frame {
+
+    padding: 0px;
+    border: 1px solid #eee;
+    margin: 0px;
+
+    width: 1024px;
+
+}
+
+
+.section {
+
+    display:inline-block;
+
+    padding: 0px;
+    border: 1px solid black;
+    margin: 4px;
+
+    width: 176px;
+
+    /*
+    padding-right: 32px;
+    position: absolute;
+    */
+}
+
+
+
+.section p {
+    padding: 4px;
+    margin: 0px;
+}
+
+.section .highlight {
+    font-weight: bold;
+}
+
+.section table {
+    width: 128px;
+}
+
+.section td {
+    border: 1px solid #ccc;
+}
+
+.section td p {
+    color: #aaa;
+}
+
+/*
+.section_date {
+
+    font-size: 8px;
+
+    !important padding: 4px;
+    !important margin: 0px;
+
+    right: 8px;
+}
+*/

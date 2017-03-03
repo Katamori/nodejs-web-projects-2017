@@ -1,0 +1,22 @@
+- check for duplicate entries
+    - tagging rows by an id and then compare contents [done]
+
+- experiment: by recursion, get all the posts that are new
+
+- more data
+- valid links to sub, author and post
+- styling
+
+- eliminate constant token access
+    - theoretically I could save the token somewhere...
+
+
+
+- /r/trendingreddits into table
+    - string "explosion", maybe even using regex
+
+
+- recent videos of a channel into subreddit
+
+- /r/nosillysuffix - separate to columns
+    - select 4 to show and other to select

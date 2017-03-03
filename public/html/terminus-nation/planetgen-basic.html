@@ -1,0 +1,90 @@
+<script src="/files/terminus-nation/ethereal-runes.js"></script>
+<script>
+
+function generate(){
+
+    var name = "";
+    var separateName = "";
+
+    var s = document.getElementById("syll").value;
+    //var maximum = document.getElementById("max").value;
+    var maximum = 25;
+
+
+    document.getElementById("result").innerHTML = "";
+    document.getElementById("result2").innerHTML = "";
+
+    if(s > 20 || s < 1){
+        s = 10;
+    }
+
+    if(maximum > 40 || maximum < 1){
+        maximum = 10;
+    }
+
+    if(document.getElementById("specRY").checked == true){
+        var runes = simpleRunes.concat(specialRunes);
+    }else{
+        var runes = simpleRunes;
+    }
+
+
+    for(var j=0; j<maximum; j++){
+        for(var i=0; i<s; i++){
+            var temp = runes[Math.floor((Math.random() * runes.length))];
+            name += temp;
+            separateName += temp + " ";
+            if(Math.floor((Math.random() * 5) + 1) == 1){
+                name += " ";
+                separateName += " ";
+            }
+        }
+        name = name.toLowerCase();
+        separateName = separateName.toLowerCase();
+        document.getElementById("result").innerHTML += name + "<br>";
+        document.getElementById("result2").innerHTML += separateName + "<br>";
+        name = "";
+        separateName = "";
+    }
+}
+
+</script>
+
+<body>
+    <center>
+    <h1>Terminus Nation planet name generator</h1>
+    <h5>Original by Razorsh4rk, slightly modified by Katamori</h5>
+    <br><br>
+
+    <form>
+        Number of syllables:<br>
+        <input type="number" id="syll" value="3"><br><br>
+
+        <!--
+        Number of generated names:<br>
+        <input type="number" id="max" value="3"><br><br>
+        -->
+
+        Use special runes?<br>
+        <input type="checkbox" id="specRY"><br><br>
+        <button type="button" onclick="generate()">generate</button>
+    </form>
+    <br><br><br>
+
+    <table>
+        <tr>
+            <th>Generated names</th>
+            <th></th>
+            <th>Separate syllables</th>
+        </tr>
+        <tr>
+            <td id="result" align="center">
+            </td>
+            <td bgcolor="black">
+            </td>
+            <td id="result2" align="center">
+            </td>
+        </tr>
+    </table>
+
+</body>

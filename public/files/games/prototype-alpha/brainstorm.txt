@@ -1,0 +1,15 @@
+puzzle - adventure game, be tudsz mutatni vele egy világot, és nem nehéz megcsinálni
+
+viszont akkor az egyszerűség kedvéért lehet egyelőre passzolni kéne az eredendően képi feladványokat
+
+tudjon Képeket kirajzolni, és lehessen kattintani - ezen felül kell egy figura ami mozog, meg pár animáció
+
+Kell egy megjelenítő rész és egy logika rész, a logika résznek tudnia kell, hova kattintott a játékos, és mivel kattintott oda
+
+adott egy 2d grid, azon kell interakciókat csinálni, meg egeret érzékelje a cucc
+
+felülnézetes feltétlenül
+
+sok apró pálya, hubok
+
+a HUD az 4 apró elemből fog állni a képernyő 4 oldalán

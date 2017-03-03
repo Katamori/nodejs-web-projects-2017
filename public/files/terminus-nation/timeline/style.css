@@ -1,0 +1,121 @@
+body {
+    	background-color: white;
+}
+
+a {
+
+	font-family: verdana;
+
+}
+
+p {
+   	font-family: arial;
+    	font-size: 20px;
+}
+
+h1 {
+
+	overflow: hidden;
+
+}
+
+
+div {
+	/* kösz kalmájör <3 */
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+
+
+/* FACTION COLORING */
+
+
+.republic 	       { background-color: #41cdff;}
+.freeheaven 	   { background-color: #279414;}
+.starcloud	       { background-color: #ececec;}
+
+.redfist 	       { background-color: #ff0000;}
+.justiceempire 	   { background-color: #926919;}
+.cybergod 	       { background-color: #f0ff00;}
+.futureempire 	   { background-color: #f97900;}
+
+.otherhuman 	{ background-color: #fee1a5;}
+
+.cloudan 	{ background-color: #747474;}
+.aurost 	{ background-color: #bababa;}
+.sunserpent 	{ background-color: #dcea86;}
+
+.shaper 	{ background-color: #7d873b;}
+
+.anubis		{ background-color: #fbfac5;}
+.darkmachine	{ background-color: #607239;}
+
+.otheralien	{ background-color: #ced9b4;}
+.general	{ background-color: #eeeeee;}
+
+/* TIMELINE ITSELF */
+
+.timeline {
+
+	width: 100%;
+	/*background-color: #E9ECE9;*/
+
+	border-collapse: collapse;
+
+
+}
+
+.timeline td {
+
+	border-bottom: 1px solid #bbb;
+	overflow: hidden;
+	word-break: break-word;
+	vertical-align: top;
+
+	padding-left: 15px;
+}
+
+
+.timeline h1 {
+
+	font-family: verdana;
+	text-align: center;
+	padding: 1%;
+
+
+}
+
+
+
+
+.stripe {
+
+	width: 40px;
+
+}
+
+
+
+.eventbox {
+
+
+}
+
+.content {
+
+	padding-top: 15px;
+	padding-bottom:5px;
+
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+.tag {
+	padding-top:4px;
+	padding-bottom:0px;
+
+	margin:0px;
+
+	font-size:13px;
+}

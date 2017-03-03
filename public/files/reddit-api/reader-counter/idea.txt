@@ -1,0 +1,36 @@
+Procedurally adding divs to the HTML.
+
+Divs to be treated as objects.
+
+Contents of the objects:
+    - name of the subreddit [DONE]
+    - an array for previously recorded values [not yet]
+    - a constructor
+        - places down HTML objects
+            - a table for the constantly refreshing data
+            - a paragraph for the subreddit name
+            - a paragraph for the most recent number
+            - a table for various predictions
+
+    - a function that updates [DONE]
+        - writes the most recent number to the corresponding paragraph [DONE]
+        - pushes that number to the array
+    - a predictor function
+        - updates the content of the table
+            - predicts to 7, 30 and 365 days
+                - based on the entire array content
+                - based on the last 10-20-50-100 recordings
+
+
+
+Future features:
+
+cross comparison (needs public object data access)
+save to database, or at least, to txt
+highlight in case of huge changes
+order subreddits by subscriber amount
+add "last update clock" for every div alone
+display most recent post
+add items from /r/trendingreditts automatically
+table expanding: by date vs by reader treshold
+UPDATE SYSTEM IS EXTREMELY BUGGY, MAKE IT TO ONE QUERY PER CYCLE PLES
