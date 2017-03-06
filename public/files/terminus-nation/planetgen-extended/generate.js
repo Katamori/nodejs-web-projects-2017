@@ -1,4 +1,8 @@
-function generate(){
+function generatePlanet(){
+    generateName();
+}
+
+function generateName(){
 
     var maximum = document.getElementById("max").value
     var maxlength = 7;

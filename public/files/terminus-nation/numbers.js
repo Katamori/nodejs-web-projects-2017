@@ -10,6 +10,8 @@ var numbersTN = [
         {
             //first subset: gas giant, rocky planet and moon distribution
             {
+                subset:"celestial body type",
+
                 {   meaning:"gas giants",
                     value:1217000   },
                 {   meaning:"rocky planets",
@@ -20,6 +22,7 @@ var numbersTN = [
 
             //second subset: faction division
             {
+                subset:"faction affiliation",
 
                 {   meaning:"Republic colonies",
                     value:3000000   },
@@ -50,8 +53,10 @@ var numbersTN = [
                 {   meaning:"colonies under Dark Machine occupation",
                     value:157000   }
 
+                {   meaning:"everything else",
+                    value:4025000   }
                 //so far, 4,025,000 are the rest
-                //these are autonomous, uninhabitable, undiscovered or otherwise outsider.    
+                //these are autonomous, uninhabitable, undiscovered or otherwise outsider.
 
             }
         }
