@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<!-- external libraries -->
+<script src='/files/jquery-3.0.0.js'></script>
+
+<!-- handmade stuff -->
+<link rel="stylesheet" type="text/css" href="/files/terminus-nation/faction-colors.css">
+
+<script src="/files/terminus-nation/ethereal-runes.js"></script>
+<script src="/files/terminus-nation/planetgen-extended/generate.js"></script>
+
+
+<body>
+    <center>
+    <h1>Terminus Nation extended planet generator</h1>
+    <h5>Core generator by Razorsh4rk, modified by Katamori</h5>
+    <br>
+
+    <form>
+        Number of generated names:<br>
+        <input type="number" id="max" value="3"><br><br>
+
+
+        <button type="button" onclick="generate()">generate</button>
+    </form>
+    <br><br>
+
+    <table>
+        <tr>
+            <th>Planet names</th>
+            <th></th>
+            <th>Planet type</th>
+            <th></th>
+            <th>Faction</th>
+        </tr>
+        <tr>
+            <td id="result" align="center"></td>
+            <td bgcolor="black"></td>
+            <td id="result2" align="center"></td>
+            <td bgcolor="black"></td>
+            <td id="result3" align="center"></td>                          
+        </tr>
+    </table>
+
+</body>
+
+</html>

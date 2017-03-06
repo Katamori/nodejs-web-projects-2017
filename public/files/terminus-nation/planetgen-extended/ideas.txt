@@ -1,0 +1,2 @@
+- generate a seed that corresponds to the current planet informations
+- visual representation with actual runes?
