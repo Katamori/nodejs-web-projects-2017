@@ -12,8 +12,16 @@ convertDate - convertdate.js
 */
 
 // initial stuff
-for(i=0;i<timelineJSON.length-1;i++){ AddBox(i); 		};
-for(i=0;i<timelineJSON.length-1;i++){ FormattedDate(i); 	};
+//for(i=0;i<5/*timelineJSON.length-1*/;i++){ AddBox(i); 		};
+//for(i=0;i<15/*timelineJSON.length-1*/;i++){ FormattedDate(i); 	};
+
+var f = 0;
+
+for(f=0;f<timelineJSON.length-1;f++){
+	AddBox(f);
+	FormattedDate(f);
+
+}
 
 
 //functions
@@ -33,7 +41,7 @@ function AddBox(num, color){
 
 	//time-scaled sizes
 	var diff =  	convertDate(timelineJSON[num+1].calendar, timelineJSON[num+1].year, "RD") -
-			convertDate(timelineJSON[num+1].calendar, timelineJSON[num  ].year, "RD");
+					convertDate(timelineJSON[num+1].calendar, timelineJSON[num  ].year, "RD");
 
 	var threshold = 10;
 
@@ -92,32 +100,32 @@ function selectColor(num){
 
 	switch(timelineJSON[num].race){
 
-		case "general": 			return "general";	break;
-		case "Cloudan": 			return "cloudan"; 	break;
-		case "Aurost": 				return "aurost"; 	break;
+		case "general": 		return "general";		break;
+		case "Cloudan": 		return "cloudan"; 		break;
+		case "Aurost": 			return "aurost"; 		break;
 		case "Sun Serpent": 	return "sunserpent"; 	break;
-		case "Shaper": 				return "shaper"; 	break;
-		default: 							return "otheralien"; 	break;
+		case "Shaper": 			return "shaper"; 		break;
+		default: 				return "otheralien"; 	break;
 
 		case "human":
 
 			switch(timelineJSON[num].faction){
 
-				case "Republic": 								return "republic"; 	break;
-				case "Free Heaven Movement": 		return "freeheaven"; 	break;
-				case "Starcloud Nation": 				return "starcloud"; 	break;
-				case "Red Fist": 								return "redfist"; 	break;
-				case "Justice Empire": 					return "justiceempire"; break;
-				case "Church of the Cybergod": 	return "cybergod"; 	break;
-				case "Future Empire": 					return "futureempire"; 	break;
-				default: 												return "otherhuman"; 	break;
+				case "Republic": 				return "republic"; 		break;
+				case "Free Heaven Movement": 	return "freeheaven"; 	break;
+				case "Starcloud Nation": 		return "starcloud"; 	break;
+				case "Red Fist": 				return "redfist"; 		break;
+				case "Justice Empire": 			return "justiceempire"; break;
+				case "Church of the Cybergod": 	return "cybergod"; 		break;
+				case "Future Empire": 			return "futureempire"; 	break;
+				default: 						return "otherhuman"; 	break;
 			}
 		break;
 
 		case "AI":
 
 			switch(timelineJSON[num].faction){
-				case "Anubis": 				return "anubis"; 	break;
+				case "Anubis": 			return "anubis"; 		break;
 				case "Dark Machine": 	return "darkmachine"; 	break;
 			}
 		break;

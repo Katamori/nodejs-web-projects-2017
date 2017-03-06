@@ -7,7 +7,7 @@ module.exports = [
       path: '/',
       handler: function (request, reply) {
           reply.file('public/html/index.html');
-          console.log(`Main page loaded.`);
+          console.log(`public/html/index.html loaded.`);
       }
   },
 
