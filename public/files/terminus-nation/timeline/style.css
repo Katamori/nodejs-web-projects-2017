@@ -27,6 +27,30 @@ div {
 	overflow: hidden;
 }
 
+
+/* input field's divs */
+
+#select_age, #select_race, #select_faction, #select_context {
+    position: absolute;
+    width: 200px;
+}
+/*
+#select_age {
+    margin-left: 0px;
+}
+ */
+#select_race {
+    margin-left: 220px;
+}
+
+#select_faction {
+    margin-left: 420px;
+}
+
+#select_context {
+    margin-left: 620px;
+}
+
 /* TIMELINE ITSELF */
 
 .timeline {

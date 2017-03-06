@@ -5,26 +5,21 @@ Variables declared elsewhere:
 calendars - convertdate.js
 timelineJSON - timeline.js
 
+
+
 Functions declared elsewhere:
 
 convertDate - convertdate.js
 
+
+
+Other things from outer source:
+
+faction coloring - faction-colors.css
+
 */
 
-// initial stuff
-//for(i=0;i<5/*timelineJSON.length-1*/;i++){ AddBox(i); 		};
-//for(i=0;i<15/*timelineJSON.length-1*/;i++){ FormattedDate(i); 	};
-
-var f = 0;
-
-for(f=0;f<timelineJSON.length-1;f++){
-	AddBox(f);
-	FormattedDate(f);
-
-}
-
-
-//functions
+for(f=0;f<timelineJSON.length-1;f++){ AddBox(f); }
 
 
 //this one adds the divs themselves (with proper coloring)
@@ -56,11 +51,14 @@ function AddBox(num, color){
 	*/
 	$( ".timeline" ).append("<tr>"+
 					"<td class='stripe "+selectColor(num)+"' id='stripe"+(num+1)+"'></td>"+
-					"<td class='eventbox "/*+selectColor(num)*/+"' style='padding-bottom: "+((diff-1)*80)+"px;'>"+
+					"<td class='eventbox' style='padding-bottom: "+((diff-1)*80)+"px;' id='no"+(num+1)+"'>"+
 						"<p class='tag'>"+header+"</p>"+
 						"<p class='content' id='content"+(num+1)+"'>Szoveg ide</p>"+
 			 		"</td>"+
 				"</tr>" );
+
+
+	FormattedDate(num);
 
 }
 
