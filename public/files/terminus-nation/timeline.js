@@ -27,7 +27,7 @@ race:
 faction: obvious; this is what going to be the main definer
 		 (in case of minor races, this is the race definer too)
 		 (can be used for important planets, too)
-		 (also optional - in that case, use "")
+		 (also optional - in that case, use "unspecified")
 		 (when conflicts come out, write the ATTACKER to this field)
 
 context: differentiating inventions, culture and such
@@ -45,18 +45,18 @@ var timelineJSON = [
 
     {
         calendar:"BY", year:-10000000000, month:0, day:0,
-        race:"Shaper", faction:"", context:"main",
+        race:"Shaper", faction:"unspecified", context:"main",
         content:"Earliest known evidence of the existence of the Shapers.",
 
     },
     {
         calendar:"BY", year:-30000, month:0, day:0,
-        race:"general", faction:"", context:"main",
+        race:"general", faction:"unspecified", context:"main",
         content:"The beginning of the Beacon World Era. The estimated age of the youngest Planet Monument."
     },
     {
         calendar:"BY", year:1, month:0, day:0,
-        race:"general", faction:"", context:"main",
+        race:"general", faction:"unspecified", context:"main",
         content:"The most recent Beacon World Activation Event. Ezbekuar's Gate is activated by Cloudan forces, "        +
 		"teleporting them to Regh. Majority of Cloudan, Sun Serpent and minor beings are destroyed.",
     },
@@ -92,13 +92,13 @@ var timelineJSON = [
     },
     {
         calendar:"KW", year:32142, month:0, day:0,
-        race:"Cloudan", faction:"", context:"main",
+        race:"Cloudan", faction:"unspecified", context:"main",
         content:"Beginning of the all-out warfare between the Cloudans and the Aurosts and the Sun Serpents, " +
 		"known as the Immortal War.",
     },
     {
         calendar:"KW", year:32908, month:0, day:0,
-        race:"Cloudan", faction:"", context:"main",
+        race:"Cloudan", faction:"unspecified", context:"main",
         content:"End of the Immortal War.",
     },
     {
@@ -132,7 +132,7 @@ var timelineJSON = [
 
     {
         calendar:"KW", year:97701, month:0, day:0,
-        race:"human", faction:"", context:"main",
+        race:"human", faction:"unspecified", context:"main",
         content:"The first man-made space ship that was able to cross the Frontier lands with 100 "+
 		"thousand cryosleeping people on planet Volada.",
     },
@@ -206,7 +206,7 @@ var timelineJSON = [
         calendar:"RD", year:3426, month:0, day:0,
         race:"human", faction:"Free Heaven Movement", context:"main",
         content:"Rest In Peace Movement, political ancestor of the Free Heaven Movement "+
-		"besieges Republic Haven the first time. First year of Resistance Year calendar.",
+		          "besieges Republic Haven the first time. First year of Resistance Year calendar.",
     },
 
 
@@ -232,7 +232,7 @@ var timelineJSON = [
 
     {
         calendar:"RD", year:4431, month:0, day:0,
-        race:"human", faction:"", context:"main",
+        race:"human", faction:"unspecified", context:"main",
         content:"The first colonists settle down on Neocairo.	",
     },
     {
@@ -298,7 +298,7 @@ var timelineJSON = [
 
     {
         calendar:"RD", year:6402, month:0, day:0,
-        race:"human", faction:"", context:"nontemps",
+        race:"human", faction:"unspecified", context:"nontemps",
         content:"Boson dies; he resurrects on Vekka.",
     },
 
@@ -306,7 +306,7 @@ var timelineJSON = [
 
     {
         calendar:"RD", year:6516, month:0, day:0,
-        race:"general", faction:"", context:"main",
+        race:"general", faction:"unspecified", context:"main",
         content:"Aurost surveillance detects that Beacon World will be depleted within less "+
                 "than 1500 years, indicating the approach of the activation of the Gate.",
     },
@@ -315,7 +315,7 @@ var timelineJSON = [
 
     {
         calendar:"RD", year:6691, month:0, day:0,
-        race:"general", faction:"", context:"main",
+        race:"general", faction:"unspecified", context:"main",
         content:"Adao Beran founds the Boson Conundrum.",
     },
 
@@ -421,7 +421,7 @@ var timelineJSON = [
     },
     {
         calendar:"RD", year:6917, month:0, day:0,
-        race:"human", faction:"", context:"nontemps",
+        race:"human", faction:"unspecified", context:"nontemps",
         content:"Ladykiller dies; he resurrects on Xyronex.",
     },
     {
@@ -440,6 +440,15 @@ var timelineJSON = [
         race:"AI", faction:"Anubis", context:"main",
         content:"Anubis (after an unsuccessfull siege) finally leaves the solar system of Augoma and starts building its so-called 'chapel'.",
     },
+
+
+
+
+
+
+
+
+
 
 
 
@@ -476,7 +485,7 @@ var timelineJSON = [
 
     {
         calendar:"RD", year:7430, month:0, day:0,
-        race:"human", faction:"", context:"nontemps",
+        race:"human", faction:"unspecified", context:"nontemps",
         content:"Hackerboy dies; he resurrects on Bhohavo.",
     },
     {
@@ -523,7 +532,7 @@ var timelineJSON = [
 
     {
         calendar:"RD", year:7690, month:0, day:0,
-        race:"human", faction:"", context:"main",
+        race:"human", faction:"unspecified", context:"main",
         content:"Red is born.",
     },
 
@@ -531,10 +540,14 @@ var timelineJSON = [
 
 
 
-
+    {
+        calendar:"RD", year:7702, month:0, day:0,
+        race:"human", faction:"Nation of the Independent Ghost Hunter Troops", context:"main",
+        content:"Adam Minkren, the leader of the NIGHT disappears after a military operation.",
+    },
     {
         calendar:"RD", year:7709, month:0, day:0,
-        race:"human", faction:"", context:"main",
+        race:"human", faction:"unspecified", context:"main",
         content:"Red dies within the galaxy; he resurrects on Mieivo. ",
     },
     {
@@ -552,12 +565,12 @@ var timelineJSON = [
 
     {
         calendar:"RD", year:7844, month:0, day:0,
-        race:"human", faction:"", context:"borns",
+        race:"human", faction:"unspecified", context:"borns",
         content:"Anput is born.",
     },
     {
         calendar:"RD", year:7863, month:0, day:0,
-        race:"human", faction:"", context:"borns",
+        race:"human", faction:"unspecified", context:"borns",
         content:"Jumper is born.",
     },
     {
@@ -567,22 +580,22 @@ var timelineJSON = [
     },
     {
         calendar:"RD", year:7871, month:2, day:27,
-        race:"human", faction:"", context:"borns",
+        race:"human", faction:"unspecified", context:"borns",
         content:"Kebechet is born.",
     },
     {
         calendar:"RD", year:7877, month:0, day:0,
-        race:"human", faction:"", context:"borns",
+        race:"human", faction:"unspecified", context:"borns",
         content:"Hammer is born on Galaris.",
     },
     {
         calendar:"RD", year:7879, month:0, day:0,
-        race:"human", faction:"", context:"borns",
+        race:"human", faction:"unspecified", context:"borns",
         content:"Amazon is born on Ontenedis.",
     },
     {
         calendar:"RD", year:7884, month:0, day:0,
-        race:"human", faction:"", context:"borns",
+        race:"human", faction:"unspecified", context:"borns",
         content:"Jelly is born.",
     },
     {
@@ -608,13 +621,13 @@ var timelineJSON = [
 
     {
         calendar:"RD", year:7901, month:0, day:0,
-        race:"human", faction:"", context:"nontemps",
+        race:"human", faction:"unspecified", context:"nontemps",
         content:"Drifter dies, he resurrects on Vel.",
     },
 
     {
         calendar:"UD", year:100000, month:0, day:0,
-        race:"human", faction:"", context:"main",
+        race:"human", faction:"unspecified", context:"main",
         content:"Placeholder.",
     },
 

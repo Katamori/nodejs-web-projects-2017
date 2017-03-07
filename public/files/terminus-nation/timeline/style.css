@@ -28,37 +28,35 @@ div {
 }
 
 
-/* input field's divs */
+/* input field */
 
-#select_age, #select_race, #select_faction, #select_context {
-    position: absolute;
-    width: 200px;
-}
-/*
-#select_age {
-    margin-left: 0px;
-}
- */
-#select_race {
-    margin-left: 220px;
+.filter {
+
+
+    width: 768px;
+
+
 }
 
-#select_faction {
-    margin-left: 420px;
+.filter td {
+
+    border-bottom: 1px solid #bbb;
+
 }
 
-#select_context {
-    margin-left: 620px;
+#select_race, #select_faction, #select_context {
+    width: 256px;
+
 }
+
 
 /* TIMELINE ITSELF */
 
 .timeline {
 
-	width: 100%;
-	/*background-color: #E9ECE9;*/
-
+	background-color: #f7f7f7;
 	border-collapse: collapse;
+    width: 768px;
 
 
 }

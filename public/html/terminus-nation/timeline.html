@@ -7,54 +7,66 @@
 	  	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
 
 		<!-- common files -->
-		<link rel="stylesheet" type="text/css" href="/files/terminus-nation/timeline/style.css">
+		<link rel="stylesheet" type="text/css" href="/files/terminus-nation/faction-colors.css">
 
 		<script src='/files/terminus-nation/timeline.js'></script>
 		<script src='/files/terminus-nation/convertdate.js'></script>
 
 		<!-- only for this one -->
-		<link rel="stylesheet" type="text/css" href="/files/terminus-nation/faction-colors.css">
+		<link rel="stylesheet" type="text/css" href="/files/terminus-nation/timeline/style.css">
 
-		<script src='/files/terminus-nation/timeline/create_timeline.js'></script>
+
 
 
 	</head>
 
 	<body>
+		<!--<h1>TIMELINE</h1>-->
 
 
-		<!-- THE SYSTEM ITSELF -->
-		<table class = "timeline">
-
-			<h1>TIMELINE</h1>
-
-
-			<div style="margin-bottom: 256px;">
-
-				<div id="select_age">
-					<a>Filter by age</a><br><br>
-
-					<a>From: </a>
-						<input type="number" id="age_min" value="0" style="width: 72px;"><br>
-					<a>To: </a>
-						<input type="number" id="age_max" value="671386" style="width: 72px;"><br><br>
-
-					<a>(Please use BY dates here. Use </a>
-					<a href='/terminus-nation/date-calc.html'>this site</a>
-					<a> to convert any date into BY format.)</a>
-				</div>
-
+		<!-- FILTERING FIELDS -->
+		<table class="filter">
+			<tr>
 
 			<!-- 	given their vague variety,
 					I generate these input fields
 					dynamically. I hope it's OK. 	-->
-				<div id='select_race'><a>Filter by race:</a></div>
-				<div id='select_faction'><a>Filter by faction:</a></div>
-				<div id='select_context'><a>Filter by context:</a></div>
+				<td id='select_race'><a>Filter by race:</a><br><br></td>
+				<td id='select_faction'><a>Filter by faction:</a><br><br></td>
+				<td id='select_context'><a>Filter by context:</a><br><br></td>
 
-			</div>
+			</tr>
 
-			<button type="button" onclick="filter()"style="position:absolute;">Apply filter</button>
+			<tr>
+				<td id="select_age">
+					<a>Filter by age</a><br><br>
+
+					<a>Min: </a>
+						<input type="number" id="age_min" value="0" style="width: 72px;"><br>
+					<a>Max: </a>
+						<input type="number" id="age_max" value="671386" style="width: 72px;">
+				</td>
+
+				<td>
+
+				</td>
+
+				<td>
+					<a>(Please use BY dates here. Use </a>
+					<a href='/terminus-nation/date-calc.html'>this site</a>
+					<a> to convert any date into BY format.)</a>
+				</td>
+			</tr>
+		</table>
+
+		<br>
+		<button type="button" onclick="filterAll()"style="position:absolute;">Apply filter</button>
+		<br><br>
+
+		<!-- THE SYSTEM ITSELF -->
+		<table class = "timeline">
+
+
 
 <!--
 		    <td class="str"></td>
@@ -65,6 +77,8 @@
 
 
 	</body>
-	<script src='/files/terminus-nation/timeline/main_js.js'></script>
+	<!-- moar files only for this one -->
+	<script src='/files/terminus-nation/timeline/create_timeline.js'></script>
+	<script src='/files/terminus-nation/timeline/create_filter.js'></script>
 
 	</html>
