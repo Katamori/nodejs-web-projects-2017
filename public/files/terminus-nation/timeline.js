@@ -46,7 +46,7 @@ var timelineJSON = [
     {
         calendar:"BY", year:-10000000000, month:0, day:0,
         race:"Shaper", faction:"", context:"main",
-        content:"Example event. The date around which Shapers appeared.",
+        content:"Earliest known evidence of the existence of the Shapers.",
 
     },
     {
@@ -443,6 +443,16 @@ var timelineJSON = [
 
 
 
+    {
+        calendar:"RD", year:7013, month:0, day:0,
+        race:"human", faction:"Shadow Legion of Caidox", context:"main",
+        content:"The alliance of settled mercenaries and local Future Empire scientists form "+
+                "the Shadow Legion on planet Caidox.",
+    },
+
+
+
+
 
 
 
@@ -484,6 +494,24 @@ var timelineJSON = [
         calendar:"RD", year:7460, month:0, day:0,
         race:"human", faction:"Union Fort", context:"main",
         content:"The Declaration of the One Union Fort of Anberoi; official foundation of Union Fort.",
+    },
+
+
+
+
+
+
+    {
+        calendar:"RD", year:7528, month:0, day:0,
+        race:"human", faction:"Nation of the Independent Ghost Hunter Troops", context:"main",
+        content:"By Jacob becoming 18, the Minkren dynasty is officially founded.",
+    },
+
+    {
+        calendar:"RD", year:7534, month:0, day:0,
+        race:"human", faction:"Shadow Legion of Caidox", context:"main",
+        content:"Caidox, capital city of the Shadow Legion falls, making an end to the empire. Nation of "+
+                "the Independent Ghost Hunter Troops is founded.",
     },
 
 
@@ -534,7 +562,7 @@ var timelineJSON = [
     },
     {
         calendar:"RD", year:7870, month:5, day:11,
-        race:"human", faction:"", context:"main",
+        race:"human", faction:"Scarab Node", context:"main",
         content:"Roimata Thueban Ramil founds the Scarab Node after becoming pregnant with Anjema.",
     },
     {
@@ -559,7 +587,7 @@ var timelineJSON = [
     },
     {
         calendar:"RD", year:7886, month:3, day:0,
-        race:"human", faction:"", context:"borns",
+        race:"human", faction:"Scarab Node", context:"borns",
         content:"Kebechet takes control over the Scarab Node, after the death of her mother.",
     },
     {
