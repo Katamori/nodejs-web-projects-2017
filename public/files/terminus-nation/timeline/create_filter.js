@@ -3,18 +3,24 @@ createCheckboxList("faction");
 createCheckboxList("context");
 
 
+//4: select all/none
+function setCheckboxes(categ, value){
+    console.log("i work at all");
+    //$(categ).find('input[type=checkbox],select').each(function() { console.log(checked) })
+}
+
 //3: hide and show appropriate elements
 function filterAll(){
 
     for(m=0;m<timelineJSON.length;m++){
 
-        var dateBY = convertDate(timelineJSON[m].calendar, timelineJSON[m].date, "BY");
-        var raceNoSpace = timelineJSON[m].race.replace(/\s/g, '');
+        var dateBY = convertDate(timelineJSON[m].calendar, timelineJSON[m].year, "BY");
+        //console.log(timelineJSON[m].calendar+", "+timelineJSON[m].date);
 
         if(
-            //dateBY >= pdocument.getElementById("age_min").value &&
-            //dateBY <= document.getElementById("age_max").value &&
-            $("#"+raceNoSpace).is(':checked') &&
+            dateBY >= Number(document.getElementById("age_min").value) &&
+            dateBY <= Number(document.getElementById("age_max").value) &&
+            $("#"+timelineJSON[m].race.replace(/\s/g, '')).is(':checked') &&
             $("#"+timelineJSON[m].faction.replace(/\s/g, '')).is(':checked') &&
             $("#"+timelineJSON[m].context.replace(/\s/g, '')).is(':checked')
         ){
@@ -31,6 +37,14 @@ function filterAll(){
 //2: create a list of checkboxes for a div
 function createCheckboxList(category){
 
+    //append selector buttons
+    $("#select_"+category).append(
+        "<button type='button' onclick='setCheckboxes(#select_"+category+", true)'>Select all</button><br>"+
+        "<button type='button' onclick='setCheckboxes(#select_"+category+", false)'>Select none</button><br>"+
+        "<button type='button' onclick='setCheckboxes("+$("#select_"+category)+", false)'>i'm a toaster</button><br>"
+    )
+
+    //and the important part
     var tempList = createList(category);
 
     for(l=0;l<tempList.length;l++){

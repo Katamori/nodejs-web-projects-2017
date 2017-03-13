@@ -40,15 +40,106 @@ content: description of the event
 var timelineJSON = [
 
 
-/* Beacon World Era */
-
-
     {
-        calendar:"BY", year:-10000000000, month:0, day:0,
+        calendar:"BY", year:-10/**/000/**/000/**/000, month:0, day:0,
         race:"Shaper", faction:"unspecified", context:"main",
         content:"Earliest known evidence of the existence of the Shapers.",
 
     },
+
+
+
+
+    {
+        calendar:"BY", year:-150/**/000/**/000, month:0, day:0,
+        race:"general", faction:"unspecified", context:"main",
+        content:"The cult of Vermyys emerges in Shaper culture."
+    },
+
+
+
+    {
+        calendar:"BY", year:-1/**/000/**/000/**/000, month:0, day:0,
+        race:"general", faction:"unspecified", context:"main",
+        content:"Estimated age of the oldest Planet Monument."
+    },
+
+
+
+
+
+
+
+    {
+        calendar:"BY", year:-400/**/000/**/000, month:0, day:0,
+        race:"Shaper", faction:"Kidar Manedorgtem", context:"main",
+        content:"Kidar Manedorgtem unifies the Shaper race within the Filament Supercluster.",
+
+    },
+
+
+
+
+
+
+
+
+
+    {
+        calendar:"BY", year:-100/**/000/**/000, month:0, day:0,
+        race:"Shaper", faction:"unspecified", context:"main",
+        content:"Earliest estimated date of the Shaper Ascension into the Starless Space.",
+
+    },
+
+
+
+
+
+
+
+    {
+        calendar:"BY", year:-72000000, month:0, day:0,
+        race:"Cloudan", faction:"unspecified", context:"main",
+        content:"Cloudan race evolves from an ancient metal-silicon hybrid based "+
+                "avian predator species, by accomodating to a pseudo-ground lifeform.",
+
+    },
+
+
+    {
+        calendar:"BY", year:-70000000, month:0, day:0,
+        race:"Shaper", faction:"unspecified", context:"main",
+        content:"Latest estimated date of the Shaper Ascension.",
+
+    },
+
+    {
+        calendar:"BY", year:-68000000, month:0, day:0,
+        race:"Cloudan", faction:"unspecified", context:"main",
+        content:"A Planet Monument Core hits Sme, the Cloudan homeworld. The resulting "+
+                "ecological disaster almost exterminates the Cloudan race, with only the "+
+                "toughest and solely the flightless members have survived.\n\n "+
+                "This event has defined both the cultural and the genetic traits of the "+
+                "race for the rest of their history.",
+
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Beacon World Era */
+
     {
         calendar:"BY", year:-30000, month:0, day:0,
         race:"general", faction:"unspecified", context:"main",
@@ -57,8 +148,10 @@ var timelineJSON = [
     {
         calendar:"BY", year:1, month:0, day:0,
         race:"general", faction:"unspecified", context:"main",
-        content:"The most recent Beacon World Activation Event. Ezbekuar's Gate is activated by Cloudan forces, "        +
-		"teleporting them to Regh. Majority of Cloudan, Sun Serpent and minor beings are destroyed.",
+        content:"The most recent Beacon World Activation Event. Ezbekuar's Gate is activated by Cloudan forces, "+
+		"teleporting them to Regh. Majority of Cloudan, Sun Serpent and minor beings are destroyed.\n\n"+
+        "With the last surviving Shaper beings leaving the Cosmic Disk, every active evidence of the Shaper "+
+        "influence disappears from the galaxy.",
     },
 
 
@@ -585,8 +678,8 @@ var timelineJSON = [
     },
     {
         calendar:"RD", year:7877, month:0, day:0,
-        race:"human", faction:"unspecified", context:"borns",
-        content:"Hammer is born on Galaris.",
+        race:"human", faction:"unspecified", context:"nontemps",
+        content:"Hammer dies; he resurrects on Galaris.",
     },
     {
         calendar:"RD", year:7879, month:0, day:0,
@@ -600,7 +693,7 @@ var timelineJSON = [
     },
     {
         calendar:"RD", year:7886, month:3, day:0,
-        race:"human", faction:"Scarab Node", context:"borns",
+        race:"human", faction:"Scarab Node", context:"main",
         content:"Kebechet takes control over the Scarab Node, after the death of her mother.",
     },
     {
