@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body style='width:100%;'>
+        <h1>FreeCodeCamp: Timestamp microservice</h1>
+
+        Functionality based on <a href="https://timestamp-ms.herokuapp.com">this site.</a>
+        <br>
+        <ul>
+            <li> Pass a string as an URL parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016) </li>
+            <li> If it does, it returns both the Unix timestamp and the natural language form of that date. </li>
+            <li> If it does not contain a date or Unix timestamp, it returns null for those properties - and a message on the nature of the error. </li>
+        </ul>
+        <br>
+        For example, both <code>[...]/timestamp-ms/December%2015,%202015</code> 
+        and <code>[...]/timestamp-ms/1450137600</code>
+        will return <code>{ "unix": 1450137600, "natural": "December 15, 2015" }</code>
+        
+
+    </body>
+
+</html>

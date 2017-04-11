@@ -1,0 +1,25 @@
+{
+  "name": "katamori-nodejs-projects",
+  "version": "1.0.0",
+  "description": "https://github.com/Katamori/nodejs-web-projects-2017",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Katamori/web-projects-2017.git"
+  },
+  "keywords": [
+    "katamori",
+    "nodejs",
+    "practice"
+  ],
+  "author": "Zoltán Schmidt 'Katamori'",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Katamori/web-projects-2017/issues"
+  },
+  "homepage": "https://github.com/Katamori/web-projects-2017#readme"
+}

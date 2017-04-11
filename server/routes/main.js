@@ -34,6 +34,8 @@ module.exports = [
               listing: true
           }
       }
-  }
+  },
 
+  //special routings
+  require("./freecodecamp.js")
 ];

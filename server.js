@@ -3,7 +3,8 @@ const Inert = require('inert');
 const Hapi = require('hapi');
 
 //custom modules
-const routes = require('./server/routes.js');
+const routes = require('./server/routes/main.js');
+
 
 //initialization
 const server = new Hapi.Server();
