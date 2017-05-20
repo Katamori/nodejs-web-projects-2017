@@ -9,7 +9,7 @@ const routes = require('./server/routes/main.js');
 //initialization
 const server = new Hapi.Server();
 
-server.connection({ port: 7776 });
+server.connection({ port: (process.env.PORT || 7776) });
 
 server.register(Inert, (err) => {
 

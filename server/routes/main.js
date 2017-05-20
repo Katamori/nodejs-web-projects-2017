@@ -37,5 +37,6 @@ module.exports = [
   },
 
   //special routings
-  require("./freecodecamp.js")
+  require("./freecodecamp/timestamp-ms.js"),
+  require("./freecodecamp/whoami.js")
 ];
