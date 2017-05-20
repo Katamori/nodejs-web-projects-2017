@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/Katamori/web-projects-2017/issues"
   },
-  "homepage": "https://github.com/Katamori/web-projects-2017#readme"
+  "homepage": "https://github.com/Katamori/web-projects-2017#readme",
+  "dependencies": {
+    "hapi": "^16.1.1",
+    "inert": "^4.2.0"
+  }
 }
